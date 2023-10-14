@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fibonacci avec Brython</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.10.2/brython.min.js"></script>
+</head>
+<body onload="brython()">
+    <h2>Calcul de Fibonacci</h2>
+    Saisissez un nombre: <input id="fibInput" type="text">
+    <button id="calcBtn">Calculer</button>
+    <div id="output">Résultat: </div>
+
+    <script type="text/python" id="script">
+        from browser import document
+
+        def fibonacci(n):
+            if n == 0:
+                return 0
+            elif n == 1:
+                return 1
+            else:
+                return fibonacci(n-1) + fibonacci(n-2)
+
+        def calculate(event):
+            n = int(document["fibInput"].value)
+            result = fibonacci(n)
+            document["output"].text = f"Résultat: Fibonacci({n}) = {result}"
+
+        document["calcBtn"].bind("click", calculate)
+    </script>
+</body>
+</html>

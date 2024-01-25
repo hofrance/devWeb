@@ -1,143 +1,101 @@
-/* Variables CSS */
-:root {
-    --body-color: #4c9a99;
-    --text-color: #2e373a;
-    --header-color: #6962a3;
-    --footer-color: #2b1e30;
-    --header-font-family: 'Redressed', cursive;
-    --body-font-family: 'Architects Daughter', cursive;
-}
-
-/* L'arrière-plan */
+/* Style personnalisé */
 body {
-    background-image: url(img/3.png);
-    background-size: cover;
-    background-position: center;
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    overflow-x: hidden;
 }
 
-/* Styles généraux */
-body {
-    font-size: 100%;
-    font-family: var(--body-font-family);
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    color: var(--text-color);
-
-    /* Préfixes CSS pour assurer la compatibilité avec les anciens navigateurs */
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-}
-
-h1, h2, h3 {
-    text-align: center;
-    text-transform: capitalize;
-    margin-bottom: 20px;
-}
-
-h1 {
-    text-decoration: dotted;
-    font-size: 3em;
-}
-
-h2 {
-    font-size: 2.5em;
-}
-
-h3 {
-    text-decoration: underline dotted;
-    font-size: 2.2em;
-}
-
-p {
-    text-align: justify;
-    margin-left: 4em;
-    margin-right: 30em;
-    font-family: var(--body-font-family);
-    font-size: 1.2em;
-}
-
-blockquote {
-    text-align: right;
-    font-style: italic;
-    margin: 20px;
-    padding: 10px;
-}
-
-/* Sommaire et Listes */
-nav ul {
-    list-style-type: none;
-    text-align: center;
-    padding: 0;
-    margin: 20px 0;
-}
-
-nav ul li {
-    display: inline-block;
-    margin: 0 15px;
-    font-family: var(--header-font-family);
-}
-
-nav ul li a {
-    text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    color: var(--text-color);
-}
-
-nav ul li a:hover {
-    background-color: rgba(var(--body-color), 0.1);
-}
-
-/* Images */
-.content-block {
-    display: flex;
-    flex-direction: row-reverse;
-    border-top: 1px solid #eaeaea;
-}
-
-.image-content, .text-content {
-    width: 50%;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.image-content img {
+#particles-js {
+    position: absolute;
     width: 100%;
-    height: auto;
-    display: block;
+    height: 100%;
+    z-index: -1;
 }
 
-.project {
-    margin-bottom: 20px;
+.header {
+    background: linear-gradient(45deg, #6dd5ed, #2193b0);
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
 }
 
-/* Media Queries pour optimisation responsive */
-@media (max-width: 800px) {
-    p {
-        margin-left: 2em;
-        margin-right: 2em;
-    }
+.header h1 {
+    font-size: 3.5rem;
+    animation: fadeInDown 2s;
+}
 
-    /* Mixin pour réutiliser le code */
-    .content-block {
-        flex-direction: column;
-    }
+.header h2 {
+    font-size: 2rem;
+    animation: fadeInUp 2s;
+}
 
-    .image-content, .text-content {
-        width: 100%;
-        padding: 10px;
-    }
+.about-me, .coming-soon {
+    text-align: center;
+    margin-top: 2rem;
+}
 
-    nav ul {
-        flex-direction: column;
-        align-items: center;
+.typing-animation p {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #6dd5ed;
+    animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.social-icons a {
+    color: #333;
+    margin: 0 1rem;
+    font-size: 2rem;
+    transition: transform .2s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+footer {
+    background-color: #2193b0;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
     }
 }
 
-/* Styles pour les boutons
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}

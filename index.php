@@ -21,7 +21,7 @@
             <h1 class="display-4">Richard BANKOUEZI</h1>
             <h2 class="font-weight-normal">Etudiant passionné en Cybersécurité et Systèmes Réseau</h2>
             <div class="header-cta my-2">
-                <a href="#about" class="btn btn-primary btn-lg">En savoir plus</a>
+                <a href="https:/richard-hofrance.com"  class="btn btn-primary btn-lg">En savoir plus</a>
                 <a href="#contact" class="btn btn-outline-light btn-lg">Contactez-moi</a>
             </div>
             <div class="social-icons">

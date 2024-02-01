@@ -27,7 +27,9 @@
 
                 <a href="https://www.richard-hofrance.com" target="_blank" class="btn btn-primary btn-lg">En savoir
                     plus</a>
-                <a href="#contact" class="btn btn-outline-light btn-lg">Contactez-moi</a>
+                
+            </a>
+                <a  href="http://richard-hofrance.com/contact" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-lg">Contactez-moi</a>
             </div>
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/richard-hofrance" target="_blank" class="text-white mx-2"><i

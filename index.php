@@ -89,7 +89,7 @@
 
         <!-- Section Projets -->
         <section class="projects mb-4">
-            <a href="http://richard-hofrance.com/projects" target="_blank" rel="noopener noreferrer">
+            <a href="http://richard-hofrance.com/project" target="_blank" rel="noopener noreferrer">
                 <h3>Projets</h3>
 
             </a>

@@ -51,18 +51,22 @@
 
         <!-- Section Formation -->
         <section class="education mb-4">
-            <h3>Formation</h3>
+            
+                <a href="http://richard-hofrance.com" target="_blank" rel="noopener noreferrer"><h3>Formation   </h3></a>
+         
             <!-- Contenu de la section Formation -->
         </section>
 
         <!-- Section Compétences -->
         <section class="skills mb-4">
             <h3>Compétences</h3>
+            <a href="http://richard-hofrance.com/competences" target="_blank" rel="noopener noreferrer"><h3>Formation   </h3></a>
             <!-- Contenu de la section Compétences -->
         </section>
 
         <!-- Section Projets -->
         <section class="projects mb-4">
+        <a href="http://richard-hofrance.com/projects" target="_blank" rel="noopener noreferrer"><h3>Formation   </h3></a>
             <h3>Projets</h3>
             <!-- Contenu de la section Projets -->
         </section>
@@ -70,6 +74,7 @@
         <!-- Section Contact -->
         <section class="contact mb-4">
             <h3>Contact</h3>
+            <a href="http://richard-hofrance.com/contact" target="_blank" rel="noopener noreferrer"><h3>Formation   </h3></a>
             <!-- Contenu de la section Contact -->
         </section>
     </main>

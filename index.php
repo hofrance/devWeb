@@ -13,7 +13,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <link rel="icon" type="image/png" href="/chemin/vers/votre/favicon.png">
+    <link rel="icon" type="image/png" href="/img/3.png">
 </head>
 
 <body>

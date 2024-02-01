@@ -19,7 +19,7 @@
 <body>
     <div id="particles-js"></div>
 
-    <header class="header text-center bg-dark text-white py-5">
+    <header class="header text-center bg-dark text-white py-3">
         <div class="container">
             <h1 class="display-4">Richard BANKOUEZI</h1>
             <h2 class="font-weight-normal">Etudiant passionné en Cybersécurité et Systèmes Réseau</h2>
